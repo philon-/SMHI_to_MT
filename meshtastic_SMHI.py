@@ -215,7 +215,7 @@ if __name__ == "__main__":
     parser.add_argument("--ch-index", type=str, default="0", help="Meshtastic channel to which messages will be sent. [0]")
     parser.add_argument("--api-uri", type=str, default="https://opendata-download-warnings.smhi.se/ibww/api/version/1/warning.json", help="API URI to fetch [https://opendata-download-warnings.smhi.se/ibww/api/version/1/warning.json]")
     parser.add_argument("--api-interval", type=int, default=120, help="Time interval in seconds at which API will be fetched. [120]")
-    parser.add_argument("--api-geocode", type=int, default=1, help="Geocode. [00]")
+    parser.add_argument("--api-geocode", type=int, default=1, help="Geocode. [1]")
     parser.add_argument("--max-messages", type=int, default=2, help="Maximum number of messages to send for each alert. Will trunkate to this number of messages. [2]")
     parser.add_argument("--repeat-number", type=int, default=0, help="Number of re-broadcasts to perform. [1]")
     parser.add_argument("--repeat-cycles", type=int, default=2, help="Number of api-intervals between rebroadcast. [2]")
